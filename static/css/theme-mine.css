@@ -51,6 +51,10 @@ a:hover {
     color: var(--MAIN-LINK-HOVER-color);
 }
 
+#chapter p {
+    text-align: left;	
+}
+
 #sidebar ul li.visited > a .read-icon {
 	color: var(--MENU-VISITED-color);
 }
