@@ -1,0 +1,22 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "learn"
+uglyurls = false
+sectionPagesMenu = "main"
+relativeURLs = true
+
+[params]
+themeVariant = "mine"
+showVisitedLinks = false
+author = "Juan Bustos"
+description = "AWS DeepLens - Smart recycle"
+disableSearch = false
+disableAssetsBusting = false
+disableLanguageSwitchingButton = true
+disableShortcutsTitle=false
+disableInlineCopyToClipBoard = true
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "tango"
