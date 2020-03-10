@@ -4,7 +4,7 @@ date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 41
 ---
-# Step 1: Deploy a sample project
+## Step 1: Deploy a sample project
 
 To deploy the project you first need to register the AWS DeepLens device, if you haven’t already. See Register Your AWS DeepLens Device for more information.
 

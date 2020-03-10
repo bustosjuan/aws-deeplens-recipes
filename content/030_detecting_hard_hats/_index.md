@@ -4,7 +4,6 @@ date: 2020-03-04T10:15:55-07:00
 draft: false
 weight: 30
 ---
-# Worker safety with AWS DeepLens and Amazon Rekognition
 
 Use AWS DeepLens and Amazon Rekognition to build an application that helps identify if a person at a construction site is wearing the right safety gear, in this case, a hard hat. 
 
