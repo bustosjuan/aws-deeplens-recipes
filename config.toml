@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://awsdeeplensresourcecenter.com/"
 languageCode = "en-us"
-title = "AWS DeepLens - Smart Recycle"
+title = "AWS DeepLens - Resource Center"
 theme = "learn"
 uglyurls = false
 sectionPagesMenu = "main"
@@ -10,7 +10,7 @@ relativeURLs = true
 themeVariant = "mine"
 showVisitedLinks = false
 author = "Juan Bustos"
-description = "AWS DeepLens - Smart recycle"
+description = "AWS DeepLens - Resource Center"
 disableSearch = false
 disableAssetsBusting = false
 disableLanguageSwitchingButton = true
