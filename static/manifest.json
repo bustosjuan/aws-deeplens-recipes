@@ -3,13 +3,8 @@
     "short_name": "deeplens",
     "icons": [
         {
-            "src": "/icons/favicon-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/favicon-196x196.png",
-            "sizes": "196x196",
+            "src": "/icons/favicon.ico",
+            "sizes": "32x32",
             "type": "image/png"
         }
     ],
