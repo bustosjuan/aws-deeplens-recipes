@@ -5,8 +5,6 @@ draft: false
 weight: 56
 ---
 
-## Connect DeepLens with a Raspberry Pi
-
 There have been many questions about how to take the inference of a model and take an action with another device.  In this overview we will show how three updates to the AWS DeepLens project will allow someone to transform a Raspberry Pi into a device ready to help you start making better decisions when you step up to those three bins next time!
 
 Prerequisites:
