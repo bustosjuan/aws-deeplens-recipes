@@ -13,8 +13,8 @@ AWS DeepLens does not allow communication to TCP/8883 by default which is requir
 
 2.	Check status of AWS DeepLens firewall and update to allow communication
 
+```bash
 sudo ufw status verbose
-
 sudo ufw allow 8883/tcp
-
+```
 <screenshot>
