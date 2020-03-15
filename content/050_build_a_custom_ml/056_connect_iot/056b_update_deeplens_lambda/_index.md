@@ -4,30 +4,31 @@ date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 58
 ---
-### Step 2
+### Step 2 
 
 We need to update the Lambda function in the Trash Classification project so that a message is sent to a new MQTT topic so the Raspberry Pi.  
 
 1.	Navigate to AWS Lambda Functions and Select the deeplens_trash_classification function.
 
-2.	Update the BOLDED lines in the Lambda Function to look like the code below.
+2.	Update the three sections of the Lambda Function to look like the code below.
 
 ```python
 # The code below will be used in a challenge lab to integrate DeepLens with a Raspberry Pi
 pi_topic = 'deeplens/trash/infer'
 ```
+
 ```python
             # Get a frame from the video stream
             #ret, frame = awscam.getLastFrame()
  
-# The code below will be used in a challenge lab to integrate DeepLens with a Raspberry Pi
+            # The code below will be used in a challenge lab to integrate DeepLens with a Raspberry Pi
             for x in range(20):
                 ret, frame = awscam.getLastFrame()
 ```
 
 ```python
 
-# The code below will be used in a challenge lab to integrate DeepLens with a Raspberry Pi
+            # The code below will be used in a challenge lab to integrate DeepLens with a Raspberry Pi
             # Send the top k results to the Raspberry Pi via MQTT
             pi_output = {}
             pi_output['object'] = output_map[top_k[0]['label']]
