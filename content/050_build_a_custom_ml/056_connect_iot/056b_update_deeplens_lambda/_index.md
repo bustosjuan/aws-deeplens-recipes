@@ -2,7 +2,7 @@
 title: "Update DeepLens Lambda Function"
 date: 2020-03-03T10:15:55-07:00
 draft: false
-weight: 56
+weight: 58
 ---
 ## Step 2: Update DeepLens Lamda Function
 

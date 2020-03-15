@@ -2,7 +2,7 @@
 title: "Update DeepLens Greengrass Group"
 date: 2020-03-03T10:15:55-07:00
 draft: false
-weight: 56
+weight: 59
 ---
 ## Step 3: Update DeepLens Greengrass Group
 

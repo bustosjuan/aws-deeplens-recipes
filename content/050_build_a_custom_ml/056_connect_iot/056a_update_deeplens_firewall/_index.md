@@ -2,7 +2,7 @@
 title: "Update DeepLens Firewall Configuration"
 date: 2020-03-03T10:15:55-07:00
 draft: false
-weight: 561
+weight: 57
 ---
 *** Update DeepLens Firewall Configuration
 
