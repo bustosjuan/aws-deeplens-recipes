@@ -1,10 +1,10 @@
 ---
-title: "Connect DeepLens with a Raspberry Pi"
+title: "Update DeepLens Greengrass Group"
 date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 59
 ---
-## Step 3: Update DeepLens Greengrass Group
+### Step 3
 
 In this step, you add an AWS IoT devices to your existing DeepLens Greengrass group. This process includes registering the device and configuring certificates and keys to allow connectivty to AWS IoT Greengrass.
  

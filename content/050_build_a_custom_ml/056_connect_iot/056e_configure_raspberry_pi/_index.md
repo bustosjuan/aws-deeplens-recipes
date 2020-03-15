@@ -1,10 +1,10 @@
 ---
-title: "Connect DeepLens with a Raspberry Pi"
+title: "Configure Raspberry Pi"
 date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 61
 ---
-## Step 5: Configure Raspberry Pi
+## Step 5
 
 1.	Run the following commands to install the AWS IoT Device SDK for Python on the Raspberry Pi:
 

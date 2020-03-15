@@ -1,10 +1,10 @@
 ---
-title: "Connect DeepLens with a Raspberry Pi"
+title: "Add Subscriptions to Greengrass"
 date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 60
 ---
-## Step 4: Add Subscriptions to Greengrass
+### Step 4 
 
 In this step, you enable the DeepLens to send MQTT messages to the RaspberryPi_SenseHAT device.
 

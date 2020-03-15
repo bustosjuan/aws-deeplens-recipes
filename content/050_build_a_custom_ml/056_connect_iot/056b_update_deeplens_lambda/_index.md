@@ -1,10 +1,10 @@
 ---
-title: "Connect DeepLens with a Raspberry Pi"
+title: "Update DeepLens Lamda Function"
 date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 58
 ---
-## Step 2: Update DeepLens Lamda Function
+### Step 2
 
 We need to update the Lambda function in the Trash Classification project so that a message is sent to a new MQTT topic so the Raspberry Pi.  
 
