@@ -1,6 +1,6 @@
 ---
 title: "What is DeepLens?"
-weight: 110
+weight: 10
 chapter: true
 draft: false
 tags:

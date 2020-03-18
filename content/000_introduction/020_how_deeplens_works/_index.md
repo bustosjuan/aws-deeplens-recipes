@@ -1,12 +1,11 @@
 ---
-title: "Introduction"
-weight: 10
+title: "How AWS DeepLens works"
+weight: 20
 chapter: true
 draft: false
 tags:
   - introduction
 ---
-## Welcome to the AWS DeepLens Tutorial - Smart Recycle
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non sodales neque sodales ut. Auctor elit sed vulputate mi sit amet. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Ornare lectus sit amet est placerat in egestas erat imperdiet. Proin sagittis nisl rhoncus mattis. Tempus egestas sed sed risus pretium. Non quam lacus suspendisse faucibus. Velit euismod in pellentesque massa placerat. Id neque aliquam vestibulum morbi blandit. Libero id faucibus nisl tincidunt eget nullam non. Neque egestas congue quisque egestas. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Nisl tincidunt eget nullam non. Consequat interdum varius sit amet. Consectetur lorem donec massa sapien faucibus. Proin sed libero enim sed faucibus turpis in eu mi. Dictum sit amet justo donec enim diam vulputate.
 
