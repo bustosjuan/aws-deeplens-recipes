@@ -6,8 +6,12 @@ draft: false
 tags:
   - introduction
 ---
-## The world's first deep learning enabled video camera for developers
+## What is AWS DeepLens?
 
-AWS DeepLens helps put machine learning in the hands of developers, literally, with a fully programmable video camera, tutorials, code, and pre-trained models designed to expand deep learning skills.
+AWS DeepLens is a fully programmable video camera that help developers expand their machine learning skills through projects, tutorials and sample code.
 
-The new AWS DeepLens (2019 Edition) is available to purchase in the US and in seven new countries: UK, Germany, France, Spain, Italy, Canada, and Japan. We have improved the hardware and software to make the device even easier to setup, allowing you to get started with machine learning more quickly.  
+In particular AWS DeepLens helps developers create projects with deep learning, a machine learning technique that uses neural networks to learn have enabled computers to make accurate predictions based on visual imagery.
+
+
+
+

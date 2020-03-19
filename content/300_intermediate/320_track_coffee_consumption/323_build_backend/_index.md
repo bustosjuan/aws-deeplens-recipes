@@ -1,5 +1,5 @@
 ---
-title: "Deploy a face detection project to AWS DeepLens"
+title: "Build a face recognition backend"
 date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 323
@@ -7,7 +7,7 @@ tags:
   - intermediate
 ---
 
-## Step 3: Create a coffee detection backend
+
 
 To recognize faces, we will use [Amazon Rekognition collections](https://docs.aws.amazon.com/rekognition/latest/dg/collections.html). A collection is a container for persisting faces detected by the [IndexFaces](https://docs.aws.amazon.com/rekognition/latest/dg/API_IndexFaces.html) API action. Amazon Rekognition doesn’t store copies of the analyzed images. Instead, it stores face feature vectors as the mathematic representation of a face within the collection.
 

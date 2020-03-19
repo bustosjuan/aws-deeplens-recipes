@@ -6,4 +6,7 @@ weight: 300
 tags:
   - intermediate
 ---
-In this section you will find recipes suited new users.
+The activities and tutorials in this section requires some basic coding knowledge.
+
+The programming language we will use for most of our tutorials will be Python.
+
