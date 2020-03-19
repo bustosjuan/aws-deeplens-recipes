@@ -11,6 +11,15 @@ tags:
 
 In this tutorial you'll learn how to deploy one of many available sample projects to your AWS DeepLens. Sample projects are ready-to-go model and code that lets you see what AWS DeepLens can do in 10 mins or less.
 
+Here are some of the many sample projects available for AWS DeepLens.
+
+|                                                              |                                                              |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![](https://m.media-amazon.com/images/G/01/aws/devices/deeplens/object-recognition.1c6eaecfa562584e637c5eb1dd1da70b8385b32b._CB485981410_.png) | ![](https://m.media-amazon.com/images/G/01/aws/devices/deeplens/facial-recognition.0e16d0530484f0471e8e0584e771514f5962f8f1._CB485969334_.jpg) |
+| **OBJECT DETECTION** Detect the locations of 20 different types of objects. | **FACE DETECTION**<br /><br />Detect the locations of faces. |
+| ![](https://m.media-amazon.com/images/G/01/aws/devices/deeplens/cat-and-dog.72b9895c61eb86f065e132a41f2decc83a0e4861._CB485972126_.jpg) | ![](https://m.media-amazon.com/images/G/01/aws/devices/deeplens/activity-recognition.29e14ec911a984654bca364ee91d796335976449._CB485966362_.jpg) |
+| **CAT VS DOG**<br /><br />Recognize if the image contains a cat or dog. | **ACTIVITY RECOGNITION**<br /><br />Recognize more than 30 kinds of actions such as brushing teeth, applying lipstick, and playing guitar. |
+
 ## 1. Create a new project
 
 ![sample-project-start](/images/300_deploy_a_sample_project/lab1-sample-projects-1.png)
@@ -45,31 +54,10 @@ You should be taken to your device's page and see the banner "Deploy Successful"
 
 ![](/images/300_deploy_a_sample_project/lab1-sample-deploy-3.png)
 
-## 3. View Video Output
 
-There are a few ways to view video output from your device, if you have a monitor and keyboard plugged in, you can open a Terminal (Ctrl+Alt+T) and enter the following command:
 
-`mplayer -demuxer lavf -lavfdopts format=mjpeg:probesize=32 /tmp/results.mjpeg`
 
-See the [documentation](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-viewing-output.html) for other ways you can view the project stream.
 
-## 4. View IoT Output
+## 4. View Video Output
 
-Now let's see how AWS DeepLens communicates its inference results back to the AWS cloud.
-
-We'll see the inference results inside the AWS IoT console. From here, you can make a lambda function that acts on the inference results.
-
-Inside your device page, click **copy** to copy the IoT topic.
-
-![lab1-view-iot-1](/images/300_deploy_a_sample_project/lab1-view-iot-1.png)
-
-Then click **AWS IoT console** to view the output.
-
-Paste in the IoT topic and click **Subscribe**.
-
-![lab1-view-iot-2](/images/300_deploy_a_sample_project/lab1-view-iot-2.png)
-
-You should see results like below:
-
-![lab1-view-iot-3](/images/300_deploy_a_sample_project/lab1-view-iot-3.png)
-
+See the [documentation](https://docs.aws.amazon.com/deeplens/latest/dg/deeplens-viewing-output.html) for ways you can view the project stream.

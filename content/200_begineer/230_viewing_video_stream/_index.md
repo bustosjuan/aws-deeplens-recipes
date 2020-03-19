@@ -7,6 +7,12 @@ tags:
   - introduction
   - setup
 ---
+
+
+DELETE
+
+
+
 ## Option 1: View video stream from your laptop's browser
 
 ### Step 1: Install the streaming certificate

@@ -6,4 +6,6 @@ weight: 200
 tags:
   - beginner
 ---
-In this section you will find recipes suited new users.
+The activities and tutorials in this section requires no coding knowledge.
+
+You will only need your AWS account, an AWS DeepLens and a sense of adventure!

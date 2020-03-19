@@ -1,12 +1,10 @@
 ---
-title: "Track coffee consumption with AWS DeepLens and Amazon Rekognition"
+title: "Track coffee consumption"
 date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 320
 ---
-[AWS Deeplens](https://aws.amazon.com/deeplens/) is a deep-learning-enabled video camera for developers. It enables you to expand your deep learning skillsets through the use of a fully programmable video camera, tutorials, code, and pre-trained models.
-
-The goal with this blog post is to show you how to get started with the AWS DeepLens and how this device facilitates the introduction of IoT and Deep Learning, putting it the hands of developers. In this blog post, we’ll show you how to build a simple face detection application that counts the number of cups of coffee that people drink and displays the tally on a leaderboard.
+In this recipe, we’ll show you how to build a simple face detection application that counts the number of cups of coffee that people drink and displays the tally on a leaderboard.
 
 We will go through the following steps:
 
@@ -14,6 +12,24 @@ We will go through the following steps:
 + Step 2: Change the inference AWS Lambda function
 + Step 3: Create a coffee detection backend
 + Step 4: Deploy the app to AWS Elastic Beanstalk
+
+## Prerequisites
+
+For this tutorial you will need to know how to:
+
+* [Register your DeepLens device](/100_getting_started/130_register_your_deeplens_device/)
+* [Deploy a sample project](/200_begineer/210_deploy_a_sample_project/)
+
+Please revisit these sections if you are not familiar with the steps.
+
+#### Skills required
+
+* Basic coding skills
+* Familiarity with the command line interface
+
+#### Time
+
+* 2 hrs
 
 ## Project Overview
 
