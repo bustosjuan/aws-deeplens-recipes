@@ -1,13 +1,11 @@
 ---
-title: "Contact and Maintainers"
-weight: 600
+title: "About the authors"
+date: 2020-03-03T10:15:55-07:00
 draft: false
+weight: 418
+tags:
+  - advanced
 ---
-For comments and feedback please contact us at:
-
-[aws-deeplens-team@amazon.com](mailto:aws-deeplens-team@amazon.com)
-
-### Site Maintainers
 {{< rawhtml >}}
  <table style="border: 0px;">
     <tr>
@@ -16,6 +14,22 @@ For comments and feedback please contact us at:
   </td>
       <td>
       <p>Todd Reagan is a Solutions Architect at Amazon Web Services based in Dallas, TX with a passion for Machine Learning and IoT. When not working, he likes spending time outdoors with his family, finding the next landscape to photograph, and playing golf.</p>
+      </td>
+    </tr>
+        <tr>
+      <td>
+       <p><img src="/images/600_authors/vr-100.jpg" style="margin: 0 auto;"></p>
+      </td>
+      <td>
+       <p>Varun Rao Bhamidimarri is an Enterprise Solutions Architect at Amazon Web Services based in Dallas Tx. His focus is helping customers with adoption of cloud-enabled analytics solutions to meet their business requirements.</p>
+      </td>
+    </tr>
+      <tr>
+      <td>
+       <p><img src="/images/600_authors/rk-100.jpg" style="margin: 0 auto;"></p>
+      </td>
+      <td>
+       <p>Raj Kadiyala is an AI/ML Tech Business Development Manager in AWS WWPS Partner Organization. Raj has over 12 years of experience in Machine Learning and likes to spend his free time exploring machine learning for practical every day solutions and staying active in the great outdoors of Colorado.</p>
       </td>
     </tr>
      <tr>
