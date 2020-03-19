@@ -20,6 +20,6 @@ ssh aws_cam@<deeplens_ip_address>
 
 ```bash
 sudo ufw status verbose
-sudo ufw allow 8883/tcp
+sudo ufw allow 8883
 ```
 <screenshot>
