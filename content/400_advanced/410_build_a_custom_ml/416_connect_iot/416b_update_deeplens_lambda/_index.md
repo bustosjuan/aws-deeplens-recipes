@@ -50,11 +50,11 @@ pi_topic = 'deeplens/trash/infer'
 
 #### 5.	In the AWS DeepLens Projects, Choose the Trash-Classification project
 
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step5_project_choose.png)
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step5_dl_project_choose.png)
 
 #### 6.	Choose Edit
 
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step6_project_edit.png)
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step6_dl_project_edit.png)
 
 #### 7.	Expand the Function section of Project content.
 
