@@ -6,3 +6,8 @@ weight: 411
 tags:
   - advanced
 ---
+
+* AWS Account
+* [AWS DeepLens](https://www.amazon.com/AWS-DeepLens-deep-learning-enabled-video-camera-developers/dp/B07JLSHR23)
+* Raspberry Pi with Sense HAT
+
