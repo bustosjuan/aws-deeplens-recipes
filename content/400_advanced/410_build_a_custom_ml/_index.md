@@ -23,3 +23,9 @@ To help our friends and colleagues make the right choice, we trained image class
 1. Run the model locally on AWS DeepLens to predict types of trash without sending any data to the cloud
 1. Send messages over a local area connection to a Raspberry Pi using AWS Internet-of-Things (IoT) Greengrass
 
+### Prerequisites
+
+* AWS Account
+* [AWS DeepLens](https://www.amazon.com/AWS-DeepLens-deep-learning-enabled-video-camera-developers/dp/B07JLSHR23)
+* Raspberry Pi with Sense HAT
+
