@@ -83,7 +83,7 @@ pi_topic = 'deeplens/trash/infer'
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step12_dl_project_choose_deploy.png)
 
 
-##### *** Wait for the Project to finish updating the DeepLens before continuing ***
+#### Wait for the Project to finish updating the DeepLens before continuing
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step14_dl_project_deployed.png)
 
 
