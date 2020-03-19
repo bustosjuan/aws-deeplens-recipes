@@ -43,45 +43,44 @@ pi_topic = 'deeplens/trash/infer'
 
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step3_save_updated_lambda.png)
 
-#### 4.	Choose Actions and Select Publish new version
-#### 5.	Choose Publish
+#### 4.	Choose Actions and Select Publish new version, then Choose Publish
 
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step4_publish_new_version.png)
 
 
-#### 6.	In the AWS DeepLens Projects, Choose the Trash-Classification project
+#### 5.	In the AWS DeepLens Projects, Choose the Trash-Classification project
 
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step6_project_choose.png)
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step5_project_choose.png)
 
-#### 7.	Choose Edit
+#### 6.	Choose Edit
 
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step6_project_edit.png)
 
-#### 8.	Expand the Function section of Project content.
+#### 7.	Expand the Function section of Project content.
 
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step8_dl_project_expand.png)
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step7_dl_project_expand.png)
 
-#### 9. Select the Version pulldown and choose the latest version of the Lambda Function
+#### 8. Select the Version pulldown and choose the latest version of the Lambda Function
 
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step9_dl_project_version_pulldown_select.png)
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step8_dl_project_version_pulldown.png)
 
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step9_dl_project_version_pulldown.png)
-
-
-#### 10. Choose Save
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step10_dl_project_save.png)
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step8_dl_project_version_pulldown_select.png)
 
 
-#### 11. Select the Trash-Classification Project and choose Deploy to device
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step11_dl_choose_project.png)
+#### 9. Choose Save
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step9_dl_project_save.png)
 
 
-#### 12. Choose the Target device to deploy the updated Project, Choose Review
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step12_dl_project_choose_target.png)
+#### 10. Select the Trash-Classification Project and choose Deploy to device
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step10_dl_choose_project.png)
 
 
-#### 13. Choose Deploy
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step13_dl_project_choose_deploy.png)
+#### 11. Choose the Target device to deploy the updated Project, Choose Review
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step11_dl_project_choose_target.png)
+
+
+#### 12. Choose Deploy
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416b_update_deeplens_lambda/416b_step12_dl_project_choose_deploy.png)
 
 
 ##### *** Wait for the Project to finish updating the DeepLens before continuing ***
