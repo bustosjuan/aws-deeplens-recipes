@@ -36,7 +36,7 @@ In this step, you add an AWS IoT devices to your existing DeepLens Greengrass gr
 
 #### 7.	Create a folder on your computer. Download the certificate and keys for your device into the folder.
 
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416c_update_deeplens_gg/416c_step7_setup_security_creds.png)
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416c_update_deeplens_gg/416c_step7_save_security_creds.png)
 
 #### 8.	Make a note of the common hash component in the file names for the RapsberryPi_SenseHAT device certificate and keys (in this example, a72ab238d3). You need it later. Choose Finish.
 
