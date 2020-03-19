@@ -22,4 +22,4 @@ ssh aws_cam@<deeplens_ip_address>
 sudo ufw status verbose
 sudo ufw allow 8883
 ```
-![](/images/)
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416a_update_deeplens_firewall/416a_step1_ssh_ufw.png)
