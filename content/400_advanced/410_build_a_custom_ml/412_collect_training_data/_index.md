@@ -19,4 +19,3 @@ Before going out and collecting images yourself, consider using the many sources
 
 We will show you how to train an ML model using data that you would collect. 
 
-{{< figure src="/images/400_advanced/410_build_a_custom_ml/412_collect_training_data/datasetexample.jpg" title="A sample image, can you guess which category this would fall into? (hint: it’s not recycling)" >}}
