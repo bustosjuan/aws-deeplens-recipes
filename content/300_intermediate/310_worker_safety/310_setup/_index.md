@@ -1,6 +1,7 @@
 ---
 title: "Setup"
 date: 2020-03-04T10:15:55-07:00
+chapter: true
 draft: false
 weight: 310
 ---

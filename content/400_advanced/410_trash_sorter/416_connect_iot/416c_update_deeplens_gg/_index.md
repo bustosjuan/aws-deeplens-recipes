@@ -1,6 +1,7 @@
 ---
 title: "Update DeepLens Greengrass Group"
 date: 2020-03-03T10:15:55-07:00
+chapter: true
 draft: false
 weight: 59
 ---

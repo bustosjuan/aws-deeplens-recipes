@@ -1,6 +1,7 @@
 ---
 title: "Deploy a face detection project"
 date: 2020-03-03T10:15:55-07:00
+chapter: true
 draft: false
 weight: 322
 tags: 
