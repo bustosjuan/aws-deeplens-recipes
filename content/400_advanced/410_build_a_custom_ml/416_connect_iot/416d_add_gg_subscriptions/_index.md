@@ -46,6 +46,7 @@ In this step, you enable the DeepLens to send MQTT messages to the RaspberryPi_S
 
 **This will update the AWS DeepLens Greengrass Core configuration to send the MQTT topic to the RaspberryPi_SenseHAT device that was added.**
 
+
 **6. Before we move to the next step, we need to get a couple pieces of information from the IoT Console:**
 
 * Get the IP Address of the AWS DeepLens:
