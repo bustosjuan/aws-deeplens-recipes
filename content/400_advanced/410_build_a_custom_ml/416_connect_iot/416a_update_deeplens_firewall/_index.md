@@ -4,7 +4,7 @@ date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 57
 ---
-## Step 1
+### Step 1
 
 AWS DeepLens does not allow communication to port 8883 by default which is required for other local Greengrass devices (Raspberry Pi in this case) to communicate with the Greengrass core (DeepLens is the Greengrass Core in this situation).  
 
