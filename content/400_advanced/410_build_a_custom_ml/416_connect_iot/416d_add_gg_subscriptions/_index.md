@@ -35,13 +35,39 @@ In this step, you enable the DeepLens to send MQTT messages to the RaspberryPi_S
 
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step5_add_subscription_deploy.png)
 
-**Deployment in Progress**
+**You will see the status update like below while the deployment is In Progress**
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step5_add_subscription_deploy_progress.png)
 
 
-**Deployment Successful**
-![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step5_add_subscription_sucess.png)
+**You will see the status change to the below when the deployment is Successfully Completed**
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step5_add_subscription_deploy_success.png)
 
 
 
 **This will update the AWS DeepLens Greengrass Core configuration to send the MQTT topic to the RaspberryPi_SenseHAT device that was added.**
+
+**6. Before we move to the next step, we need to get a couple pieces of information from the IoT Console:**
+
+* Get the IP Address of the AWS DeepLens:
+    
+    * Choose Cores, then Select the DeepLens
+    ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_dl_ip.png)
+    
+    * Choose Connectivity
+    ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_dl_ip_conn.png)
+
+    * Take a note of the IP Address at the top of the list, this should be an IPv4 address from your local network. Then Choose Back Arrow in upper left corner.  This will get you back to the Greengrass Group Console.
+    ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_dl_ip_view.png)
+
+
+* Determine your AWS IoT endpoint:
+    
+    * We need to Click the Back Arrow one more time in the upper left corner to take us back to the IoT Console.
+    ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_iot_endpoint_back.png)
+
+    * In the AWS IoT console, in the navigation pane, choose Settings.
+    ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_iot_endpoint_settings.png)
+   
+
+    * Under Settings, make a note of the value of Endpoint. You use this value in the next step.
+    ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_iot_endpoint.png)
