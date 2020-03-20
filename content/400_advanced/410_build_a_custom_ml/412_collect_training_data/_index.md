@@ -11,7 +11,7 @@ The type of ML algorithm we will be using today is called an image classificatio
 Before going out and collecting images yourself, consider using the many sources for images that are publicly available. Wewant images that have clear labels (often done by humans) on what’s inside the image. Here are some sources you could look for your use case:
 
 1. **AWS Open datasets:** Contains a variety of datasets sourced from trusted entities that are willing to share and open their datasets for general use. For more information, visit https://aws.amazon.com/opendata
-2. **AWS Data Exchange:**, You can find datasets that are both free and available for a fee or subscription charge. These are very well curated and labeled and therefore involve a charge in most cases. For more information, visit https://aws.amazon.com/data-exchange/
+2. **AWS Data Exchange:** You can find datasets that are both free and available for a fee or subscription charge. These are very well curated and labeled and therefore involve a charge in most cases. For more information, visit https://aws.amazon.com/data-exchange/
 3. **GitHub:** There are several public repositories that offer image datasets. Make sure you comply with the terms and conditions, and that you are referencing the original owners when your work is published.
 4. **Kaggle:** Has a wide variety of public datasets, from disease statistics to bird pictures. Also, they provide some interesting starter Jupyter notebooks. For more information visit: https://www.kaggle.com/datasets
 5. **US government** and a lot of non-profit and research organizations publish data for public use under certain terms for time to time. These can be a great source of data for more information visit  https://data.gov/
