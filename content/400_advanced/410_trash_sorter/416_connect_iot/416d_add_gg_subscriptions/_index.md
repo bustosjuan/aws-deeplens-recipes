@@ -14,9 +14,9 @@ In this step, you enable the DeepLens to send MQTT messages to the RaspberryPi_S
 
 **2. Configure the subscription:**
 
-    *Under Select a source, choose Lambdas, and then choose deeplens_trash_classification.
-    *Under Select a target, choose Devices, and then choose RaspberryPi_SenseHAT.
-    *Choose Next.
+* Under Select a source, choose Lambdas, and then choose deeplens_trash_classification.
+* Under Select a target, choose Devices, and then choose RaspberryPi_SenseHAT.
+* Choose Next.
 
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step2_add_subscription.png)
 
