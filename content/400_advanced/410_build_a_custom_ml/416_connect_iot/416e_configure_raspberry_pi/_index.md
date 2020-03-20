@@ -261,7 +261,7 @@ while True:
 
 ```
 
-2. Now that we have saved the code into the folder, make sure your directory listing looks like the output below.
+**2. Now that we have saved the code into the folder, make sure your directory listing looks like the output below.**
 
 ```bash
 ls -al
@@ -270,19 +270,23 @@ ls -al
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416e_configure_raspberry_pi/416e_directory_listing.png)
 
 
-3. With all the files verified, now the files need to be copied over to the Raspberry Pi.  We have chosen to go up one folder level, and tar the directory before secure copying the one file to the Raspberry Pi.  You can copy the files other ways to the Raspberry Pi if you choose.
+**3. With all the files verified, now the files need to be copied over to the Raspberry Pi.  We have chosen to go up one folder level, and tar the directory before secure copying the one file to the Raspberry Pi.  You can copy the files other ways to the Raspberry Pi if you choose.**
 
 ```bash
 cd ..
 tar -cvf r_pi.tar <path-to-folder-containing-device-certificates>
 ```
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416e_configure_raspberry_pi/416e_create_tar.png)
+
 
 ```bash
 scp r_pi.tar pi@<raspberry_pi_ip address>:.
 ```
 
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416e_configure_raspberry_pi/416e_scp_to_pi.png)
 
-4.	Connect to the Raspberry Pi using either ssh or by opening a terminal window if you are working directly connected.
+
+**4. Connect to the Raspberry Pi using either ssh or by opening a terminal window if you are working directly connected.**
 
     In your user directory, there should be a r_pi.tar file that was secure copied in the previous step.  Use the tar command below to extract the certificates and the Python code.
 
@@ -290,7 +294,7 @@ scp r_pi.tar pi@<raspberry_pi_ip address>:.
 tar -xvf r_pi.tar
 ```
 
-3. After extracting the file, use the following commands to install the AWS IoT Device SDK for Python on the Raspberry Pi:
+**5. After extracting the file, use the following commands to install the AWS IoT Device SDK for Python on the Raspberry Pi:**
 
 ```bash
 cd ~
@@ -299,10 +303,10 @@ cd aws-iot-device-sdk-python
 sudo python setup.py install
 ```
 
-4.	Make sure that the Raspberry Pi and the AWS DeepLens are connected to the internet using the same local network.
+**6. Make sure that the Raspberry Pi and the AWS DeepLens are connected to the internet using the same local network.**
 
 
-5.	On Raspberry Pi, run the following command using the IP address of the DeepLens that we looked up in the IoT console in the previous step. You can use Ctrl + C to stop the ping command.
+**7. On Raspberry Pi, run the following command using the IP address of the DeepLens that we looked up in the IoT console in the previous step. You can use Ctrl + C to stop the ping command.**
 
 ```bash
 ping <ip-address-of-DeepLens>
@@ -310,25 +314,28 @@ ping <ip-address-of-DeepLens>
 
 Output similar to the following indicates successful communication between the computer and the AWS DeepLens (0% packet loss):
 
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416e_configure_raspberry_pi/416e_ping_deeplens_from_pi.png)
+
 
  
-8.	Still on the Raspberry Pi, we need to go into the hash-setup folder that was created when we extracted the tar file.  The basicDiscovery.py script attempts to collect information on the location of the AWS IoT Greengrass core at its endpoints. This information is stored after the device has discovered and successfully connected to the core. This allows future messaging and operations to be executed locally (without the need for an internet connection).
+**8. Still on the Raspberry Pi, we need to go into the hash-setup folder that was created when we extracted the tar file.  The basicDiscovery.py script attempts to collect information on the location of the AWS IoT Greengrass core at its endpoints. This information is stored after the device has discovered and successfully connected to the core. This allows future messaging and operations to be executed locally (without the need for an internet connection).**
 
-Note
+**Note**
 You can run the following command from the hash-setup folder that contains the basicDiscovery.py file for detailed script usage information:
 
 ```bash
 python basicDiscovery.py –help
 ```
 
-9.	Substitute the AWS_IOT_ENDPOINT that we gathered at the end of the previous step and the hash for your certificates in the example below.  This Python script will perform the discovery of the Greengrass Core (DeepLens) and start listening on the topic specified.  
+**9. Substitute the AWS_IOT_ENDPOINT that we gathered at the end of the previous step and the hash for your certificates in the example below.  This Python script will perform the discovery of the Greengrass Core (DeepLens) and start listening on the topic specified.**  
 
 ```bash 
 python basicDiscovery.py --endpoint AWS_IOT_ENDPOINT --rootCA root-ca-cert.pem --cert hash.cert.pem --key hash.private.key --thingName RaspberryPi_SenseHAT --topic 'deeplens/trash/infer' --mode subscribe
 ```
 
-10. If everything has gone to plan, you should see output similar to below, and should also see the Sense HAT on the Raspberry Pi changing based on the object placed in front of the DeepLens camera.
+**10. If everything has gone to plan, you should see output similar to below, and should also see the Sense HAT on the Raspberry Pi changing based on the object placed in front of the DeepLens camera.**
 
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416e_configure_raspberry_pi/416e_raspberry_pi_output.png)
 
 
 **Congratulations! You are now ready to join the pursuit of sustainability by using the AWS DeepLens Trash Classification project to give you that extra confidence on choosing the correct bin to toss your item.**
