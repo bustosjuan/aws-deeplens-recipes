@@ -53,7 +53,7 @@ On Windows, you can decompress .tar.gz files using a tool such as 7-Zip or WinZi
 **10. Save the root CA certificate as root-ca-cert.pem in the same folder as the RapsberryPi_SenseHAT device certificates and keys. All these files should be in one folder on your computer.  For ATS endpoints (preferred), download the appropriate ATS root CA certificate, such as Amazon Root CA 1.**
 
 **Note**
-If you're using a web browser on the Mac and you see This certificate is already installed as a certificate authority, open a Terminal window and download the certificate into the folder that contains the device certificates and keys. For example, if you're using an ATS endpoint, you can run the following command to download the Amazon Root CA 1 certificate.
+If you're using a web browser on the Mac, you will see this certificate is already installed as a certificate authority, open a Terminal window and download the certificate into the folder that contains the device certificates and keys. For example, you can run the following command to download the Amazon Root CA 1 certificate.
 
 ```bash
 cd path-to-folder-containing-device-certificates
@@ -65,5 +65,4 @@ Run the command below to ensure that the file is not empty. If the file is empty
 
 ```bash
 cat root-ca-cert.pem
-
 ```
