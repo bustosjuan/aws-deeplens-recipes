@@ -49,7 +49,7 @@ If you already have a DeepLens, feel free to skip to any of the following recipe
     time="Time: 1-2 hrs"
     img_src="/images/000_intro/trash-sorter.jpg"
     body="Build a custom ML model to separate trash, compost and recyclables."
-    link="/300_intermediate/410_trash_sorter/"
+    link="/400_advanced/410_trash_sorter/"
     >}}
 </div>
 
