@@ -276,6 +276,7 @@ ls -al
 cd ..
 tar -cvf r_pi.tar <path-to-folder-containing-device-certificates>
 ```
+
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416e_configure_raspberry_pi/416e_create_tar.png)
 
 
@@ -288,7 +289,7 @@ scp r_pi.tar pi@<raspberry_pi_ip address>:.
 
 **4. Connect to the Raspberry Pi using either ssh or by opening a terminal window if you are working directly connected.**
 
-    In your user directory, there should be a r_pi.tar file that was secure copied in the previous step.  Use the tar command below to extract the certificates and the Python code.
+In your user directory, there should be a r_pi.tar file that was secure copied in the previous step.  Use the tar command below to extract the certificates and the Python code.
 
 ```bash
 tar -xvf r_pi.tar
