@@ -4,7 +4,7 @@ date: 2020-03-03T10:15:55-07:00
 draft: false
 weight: 61
 ---
-## Step 5
+### Step 5
 
 Now that we have done all the configuration for the communication to the AWS DeepLens, the Raspberry Pi needs to be configured to use the information we have collected.
 
