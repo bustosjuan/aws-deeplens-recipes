@@ -26,44 +26,35 @@ Next we'll replace the sample project Lambda function with our own to upload cro
 
 #### Create an AWS DeepLens inference Lambda function
 
-<BAD>
-
-1. **Go to AWS Lambda in AWS Console at https://console.aws.amazon.com/lambda/.**
-2. **Click on Create function.**
-3. **Under Create function, select Blueprints.**
-4. **Under Blueprints, type greengrass and hit enter to filter blueprint templates.**
-5. **Select greengrass-hello-world and click Configure.**
-6. **Under Basic information, provide the following details:**
-
-* **Name: name-worker-safety-deeplens (example: kashif-worker-safety-deeplens)**
-* **Role: Choose and existing role**
-* **Existing role: DeepLensInferenceLambdaRole**
-* **Click Create function.**
-
-1. **Copy the code from [deeplens-lambda.py](/code/deeplens-lambda.py) and paste it under the Function code for the Lambda function.** 
-2. **Go to line 34 and modify the line below with the name of your S3 bucket created in the earlier step.**
-
-**`bucket_name = "REPLACE-WITH-NAME-OF-YOUR-S3-BUCKET"`**
-
-1. **Click Save.**
-2. **Click on Actions, and then "Publish new version".**
-3. **For Version description enter: Detect a person and push frame to S3 bucket. and click Publish.**
+1. Downoad [worker-safety-deeplens-lambda.zip](/code/worker-safety/worker-safety-deeplens-lambda.zip)
+2. Go to AWS Lambda in AWS Console at https://console.aws.amazon.com/lambda/.
+3. Go to AWS Lambda in your AWS console and click **Create Function**.
+4. Select **Author from Scratch** and make sure the follow options are selected:
+   1. Runtime: **Python 2.7**
+   2. Choose or create an execution role: **Use an existing role**
+   3. Existing role: **service-role/AWSDeepLensLambdaRole**
+5. Once the function is created, scroll down on the function's detail page and choose **Upload zip** in *Code entry type*
+6. Upload the **worker-safety-deeplens-lambda.zip**.
+7. Open the **lambda_function.py**.
+8. Go to line 34 and modify the line below with the name of your S3 bucket created in the earlier step.
+   1. **`bucket_name = "REPLACE-WITH-NAME-OF-YOUR-S3-BUCKET"`**
+9. Choose **Save** to save the code you entered.
+10. From the **Actions** dropdown menu list, choose **Publish new version**. Publishing the function makes it available in the AWS DeepLens console so that you can add it to your custom project.
+11. Enter a version number and click publish!
 
 ### Create an AWS DeepLens project
 
 1. Using your browser, open the AWS DeepLens console at https://console.aws.amazon.com/deeplens/.
 2. Choose Projects, then choose Create new project.
-3. On the Choose project type screen
+3. On the Choose project type screen, Choose Create a new blank project, and click Next.
+4. On the Specify project details screen
 
-* Choose Create a new blank project, and click Next.
+* Under Project information section:
+    * Project name: your-user-name-worker-safety (example: kashif-worker-safety)
+* Under Project content:
+    * Click on Add model, click on radio button for deeplens-object-detection and click Add model.
+    * Click on Add function, click on radio button for your lambda function (example: kashif-worker-safety-deeplens) lambda function and click Add function.
 
-1. On the Specify project details screen
-
-    * Under Project information section:
-        * Project name: your-user-name-worker-safety (example: kashif-worker-safety)
-    * Under Project content:
-        * Click on Add model, click on radio button for deeplens-object-detection and click Add model.
-        * Click on Add function, click on radio button for your lambda function (example: kashif-worker-safety-deeplens) lambda function and click Add function.
 * Click Create. This returns you to the Projects screen.
 
 ### Deploy the project to AWS DeepLens 
