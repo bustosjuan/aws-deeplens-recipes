@@ -6,16 +6,9 @@ weight: 61
 ---
 ## Step 5
 
-1.	Run the following commands to install the AWS IoT Device SDK for Python on the Raspberry Pi:
+Now that we have done all the configuration for the communication to the AWS DeepLens, the Raspberry Pi needs to be configured to use the information we have collected.
 
-```bash
-cd ~
-git clone https://github.com/aws/aws-iot-device-sdk-python.git
-cd aws-iot-device-sdk-python
-sudo python setup.py install
-```
-
-2.	Create basicDiscovery.py from the code below in the folder you downloaded the IoT device certificates.
+**1.	To get started we need to create basicDiscovery.py from the Python code below in the folder of your computer where you downloaded the IoT device certificates.  You can use your favorite text editor to paste the code below and save the file.**
 
 ```python
 # /*
@@ -56,10 +49,9 @@ AllowedActions = ['both', 'publish', 'subscribe']
 sense = SenseHat()
 
 def customOnMessage(message):
-	# print(message.payload)
     
 	message_from_core = json.loads(message.payload)
-		
+	
 	O = (0, 0, 0)
 	R = (255, 0, 0)
 	C = (0, 255, 0)
@@ -92,7 +84,7 @@ def customOnMessage(message):
 	B, B, B, B, B, O, O, O,
 	B, B, B, B, B, B, O, O,
 	B, B, O, O, B, B, O, O,
-	B, B, O, B, B, B, O, O,
+	B, B, B, B, B, B, O, O,
 	B, B, B, B, B, O, O, O,
 	B, B, O, B, B, O, O, O,
 	B, B, O, O, B, B, O, O,
@@ -116,15 +108,15 @@ def customOnMessage(message):
 	item = message_from_core["object"]
 	
 	if "Recycling" in item:
-        	sense.set_pixels(recycle)
+       	sense.set_pixels(recycle)
 		time.sleep(1)
 		sense.set_pixels(question_mark)
-	if "Compost" in item:
-        	sense.set_pixels(compost)
+	elif "Compost" in item:
+       	sense.set_pixels(compost)
 		time.sleep(1)
 		sense.set_pixels(question_mark)
-	if "Landfill" in item:
-        	sense.set_pixels(landfill)
+	elif "Landfill" in item:
+       	sense.set_pixels(landfill)
 		time.sleep(1)
 		sense.set_pixels(question_mark)
 	
@@ -169,7 +161,7 @@ logger.setLevel(logging.DEBUG)
 streamHandler = logging.StreamHandler()
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 streamHandler.setFormatter(formatter)
-logger.addHandler(streamHandler)
+# logger.addHandler(streamHandler)
 
 # Progressive back off core
 backOffCore = ProgressiveBackOffCore()
@@ -269,40 +261,75 @@ while True:
 
 ```
 
-3.	Make sure that the Raspberry Pi and the AWS DeepLens are connected to the internet using the same network.
+2. Now that we have saved the code into the folder, make sure your directory listing looks like the output below.
+
+```bash
+ls -al
+```
+
+![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416e_configure_raspberry_pi/416e_directory_listing.png)
 
 
-4.	On the AWS DeepLens, run the following command to find its IP address.
+3. With all the files verified, now the files need to be copied over to the Raspberry Pi.  We have chosen to go up one folder level, and tar the directory before secure copying the one file to the Raspberry Pi.  You can copy the files other ways to the Raspberry Pi if you choose.
+
+```bash
+cd ..
+tar -cvf r_pi.tar <path-to-folder-containing-device-certificates>
+```
+
+```bash
+scp r_pi.tar pi@<raspberry_pi_ip address>:.
+```
 
 
+4.	Connect to the Raspberry Pi using either ssh or by opening a terminal window if you are working directly connected.
 
-5.	On Raspberry Pi, run the following command using the IP address of the DeepLens. You can use Ctrl + C to stop the ping command.
+    In your user directory, there should be a r_pi.tar file that was secure copied in the previous step.  Use the tar command below to extract the certificates and the Python code.
 
-ping IP-address
+```bash
+tar -xvf r_pi.tar
+```
+
+3. After extracting the file, use the following commands to install the AWS IoT Device SDK for Python on the Raspberry Pi:
+
+```bash
+cd ~
+git clone https://github.com/aws/aws-iot-device-sdk-python.git
+cd aws-iot-device-sdk-python
+sudo python setup.py install
+```
+
+4.	Make sure that the Raspberry Pi and the AWS DeepLens are connected to the internet using the same local network.
+
+
+5.	On Raspberry Pi, run the following command using the IP address of the DeepLens that we looked up in the IoT console in the previous step. You can use Ctrl + C to stop the ping command.
+
+```bash
+ping <ip-address-of-DeepLens>
+```
 
 Output similar to the following indicates successful communication between the computer and the AWS DeepLens (0% packet loss):
 
- 
-
-
-
 
  
-
-7.	On your computer, open a command-line (terminal or command prompt) window.  This will be used to connect to the RaspberryPi_SenseHAT device.
- 
-8.	Upon execution, basicDiscovery.py attempts to collect information on the location of the AWS IoT Greengrass core at its endpoints. This information is stored after the device has discovered and successfully connected to the core. This allows future messaging and operations to be executed locally (without the need for an internet connection).
+8.	Still on the Raspberry Pi, we need to go into the hash-setup folder that was created when we extracted the tar file.  The basicDiscovery.py script attempts to collect information on the location of the AWS IoT Greengrass core at its endpoints. This information is stored after the device has discovered and successfully connected to the core. This allows future messaging and operations to be executed locally (without the need for an internet connection).
 
 Note
-You can run the following command from the folder that contains the basicDiscovery.py file for detailed script usage information:
+You can run the following command from the hash-setup folder that contains the basicDiscovery.py file for detailed script usage information:
 
+```bash
 python basicDiscovery.py –help
+```
 
-9.	cd path-to-certs-folder
+9.	Substitute the AWS_IOT_ENDPOINT that we gathered at the end of the previous step and the hash for your certificates in the example below.  This Python script will perform the discovery of the Greengrass Core (DeepLens) and start listening on the topic specified.  
 
+```bash 
 python basicDiscovery.py --endpoint AWS_IOT_ENDPOINT --rootCA root-ca-cert.pem --cert hash.cert.pem --key hash.private.key --thingName RaspberryPi_SenseHAT --topic 'deeplens/trash/infer' --mode subscribe
+```
+
+10. If everything has gone to plan, you should see output similar to below, and should also see the Sense HAT on the Raspberry Pi changing based on the object placed in front of the DeepLens camera.
 
 
 
-Congratulations! You are now ready to join the pursuit of sustainability by using the AWS DeepLens Trash Classification project to give you that extra confidence on choosing the correct bin to toss your item.
+**Congratulations! You are now ready to join the pursuit of sustainability by using the AWS DeepLens Trash Classification project to give you that extra confidence on choosing the correct bin to toss your item.**
 
