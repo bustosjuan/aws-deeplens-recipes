@@ -21,7 +21,7 @@ In this step, you enable the DeepLens to send MQTT messages to the RaspberryPi_S
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step2_add_subscription.png)
 
 
-**3. Under Topic filter, enter ***deeplens/trash/infer***, and then choose Next.**
+**3. Under Topic filter, enter *deeplens/trash/infer*, and then choose Next.**
 
 ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step3_add_subscription_topic.png)
 
