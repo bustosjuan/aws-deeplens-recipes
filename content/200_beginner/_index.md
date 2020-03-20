@@ -18,6 +18,6 @@ You will only need your AWS account, an AWS DeepLens and a sense of adventure!
     time="Time: 10 mins"
     img_src="/images/000_intro/sample-face-rec.jpg"
     body="Quickly try out pre-built ML projects on your DeepLens."
-    link="/200_begineer/210_deploy_a_sample_project/"
+    link="/200_beginner/210_deploy_a_sample_project/"
     >}}
 </div>
