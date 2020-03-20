@@ -27,7 +27,7 @@ To help our friends and colleagues make the right choice, we trained image class
 ### Prerequisites
 
 * AWS Account
-* Amazon S3 bucket starting with **deeplens-**. See [how to create one](http://localhost:1313/100_getting_started/140_setup_data_storage_with_amazon_s3/).
+* Amazon S3 bucket starting with **deeplens-**. See [how to create one](/100_getting_started/140_setup_data_storage_with_amazon_s3/).
 * AWS DeepLens. [Buy one on Amazon](https://www.amazon.com/AWS-DeepLens-deep-learning-enabled-video-camera-developers/dp/B07JLSHR23).
 * Raspberry Pi with [Sense HAT](https://astro-pi.org/wp-content/uploads/2018/09/T05.2_Meet-the-Sense-HAT.pdf). Get one [here](https://www.raspberrypi.org/products/sense-hat/).
 
