@@ -207,3 +207,12 @@ div.notices.info p {
   line-height: 150% !important;
 }
 
+#body .card-deck {
+  margin-bottom: 20px;
+}
+#body .card-deck img {
+  margin: 0 !important;
+}
+#body a:hover {
+  text-decoration: none;
+}
