@@ -9,4 +9,4 @@ There have been many questions about how to take the inference of a model and ta
 
 Prerequisites:
 •	DeepLens with the Trash Classification Recipe deployed
-•	Raspberry Pi with a Sense HAT ( https://astro-pi.org/wp-content/uploads/2018/09/T05.2_Meet-the-Sense-HAT.pdf )
+•	Raspberry Pi with a [Sense HAT](https://astro-pi.org/wp-content/uploads/2018/09/T05.2_Meet-the-Sense-HAT.pdf)
