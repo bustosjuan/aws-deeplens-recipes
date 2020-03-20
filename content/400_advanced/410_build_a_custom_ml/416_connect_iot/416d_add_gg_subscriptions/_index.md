@@ -49,9 +49,9 @@ In this step, you enable the DeepLens to send MQTT messages to the RaspberryPi_S
 
 **6. Before we move to the next step, we need to get a couple pieces of information from the IoT Console:**
 
-* Get the IP Address of the AWS DeepLens:
+* We need to get the IP Address of the AWS DeepLens:
     
-    * Choose Cores, then Select the DeepLens
+    * Choose Cores, then Select the deeplens
     ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_dl_ip.png)
     
     * Choose Connectivity
@@ -70,5 +70,5 @@ In this step, you enable the DeepLens to send MQTT messages to the RaspberryPi_S
     ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_iot_endpoint_settings.png)
    
 
-    * Under Settings, make a note of the value of Endpoint. You use this value in the next step.
+    * Under Settings, make a note of the value of Endpoint. You will use this value in as we configure the Raspberry Pi to communicate with the DeepLens.
     ![](/images/400_advanced/410_build_a_custom_ml/416_connect_iot/416d_add_gg_subscriptions/416d_step6_get_iot_endpoint.png)
