@@ -10,9 +10,11 @@ tags:
 
 Recipes are curated tutorials from the AWS team designed to show you how to build ML-powered applications with DeepLens.
 
-If you are new to Deeplens, [continue here](/000_introduction/010_what_is_deeplens/).
+If you are new to Deeplens, **[continue here](/000_introduction/010_what_is_deeplens/)**.
 
-If you already have a DeepLens, feel free to choose from the following recipes. 
+
+
+If you already have a DeepLens, feel free to skip to any of the following recipes. 
 
 <div class="card-deck">
 {{< recipe-card 
@@ -21,7 +23,7 @@ If you already have a DeepLens, feel free to choose from the following recipes.
     time="Time: 10 mins"
     img_src="/images/000_intro/sample-face-rec.jpg"
     body="Quickly try out pre-built ML projects on your DeepLens."
-    link="/200_begineer/210_deploy_a_sample_project/"
+    link="/200_beginner/210_deploy_a_sample_project/"
     >}}
 {{< recipe-card 
     title="Worker Safety"
