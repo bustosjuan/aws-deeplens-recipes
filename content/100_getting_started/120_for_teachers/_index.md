@@ -10,7 +10,7 @@ tags:
 
 If you’re here to **teach** students how  to build machine learning models and deploy it to AWS DeepLens or if you're looking for ideas on how to incorporate DeepLens into your curriculumn, you’ve come to the right section.
 
-We will use some machine learning terminology in this section, if you're not familiar with machine learning terminology, refer to the [terminology section]().
+We will use some machine learning terminology in this section, if you're not familiar with machine learning terminology, refer to the [terminology section](/000_introduction/020_how_deeplens_works/).
 
 #### How to navigate this site
 
