@@ -9,9 +9,9 @@ tags:
 ---
 ## Deeplens Trash Classiffication Recipe
 
-The Environmental Protection Agency estimates that 75% of waste is recyclable, yet only 34% is making it into the recycle bin. Often it can be confusing to know which bin: Landfill, Compost, or Recycling to toss an item into. Sometimes we all need a little help to make the right decision!  
+The Environmental Protection Agency estimates that 75% of waste is recyclable, yet only 34% makes it into the recycle bin. Often it can be confusing to know which bin to toss an item into—landfill, compost, or recycling.
 
-To help our friends and colleagues make the right choice, we trained image classification machine learning model to distinguish between the different types of trash. We then used AWS DeepLens, a deep-learning enabled video camera, to predict if the trash item can be recycled or composted instead of being thrown into the landfill.
+To help you make the right choice, you can train an image classification machine learning (ML) model to distinguish between different types of trash. This post hows you how to use [AWS DeepLens](https://aws.amazon.com/deeplens/), a deep learning-enabled video camera, to predict if you can recycle or compost the item instead of throwing it into a landfill. Optionally, after AWS DeepLens makes its prediction, you can set up AWS DeepLens to send a message to a Raspberry Pi to show you which bin to throw the item in.
 
 {{< youtube QF0QjRjBwFs >}}
 
