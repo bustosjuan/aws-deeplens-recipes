@@ -11,7 +11,7 @@ This recipe uses Amazon SageMaker Jupyter notebooks as the development environme
 
 First, download the example notebook: [aws-deeplens-custom-trash-detector.ipynb](/code/trash-sorter/aws-deeplens-custom-trash-detector.ipynb) 
 
-Then to create a custom image classification model, you need to use a graphics processing unit (GPU) enabled training job instance. GPUs are excellent at parallelizing the computations required to train a neural network. This tutorial uses a single ml.p2.xlarge instance. In order to access a GPU-enabled training job instance, you must submit a request for a service limit increase to the AWS Support Center. You can follow the [instructions here](400_advanced/410_trash_sorter/411_setup/) to increase your limit. 
+Then to create a custom image classification model, you need to use a graphics processing unit (GPU) enabled training job instance. GPUs are excellent at parallelizing the computations required to train a neural network. This tutorial uses a single ml.p2.xlarge instance. In order to access a GPU-enabled training job instance, you must submit a request for a service limit increase to the AWS Support Center. You can follow the [instructions here](/400_advanced/410_trash_sorter/411_setup/) to increase your limit. 
 
 After you have received your limit increase, [Launch your Amazon SageMaker notebook instance](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-setup-working-env.html). 
 
