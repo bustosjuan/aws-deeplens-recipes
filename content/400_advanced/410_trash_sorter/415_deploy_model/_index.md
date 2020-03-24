@@ -118,6 +118,8 @@ Choose the **Blank Project option**.
 
 ![lab3-custom-project-1](/images/500_deploy_a_custom_model/lab3-custom-project-1.png)
 
+Name your project **your_name-trash-sorter**
+
 Then click **Add model** and select the model you just created.
 
 Then click **Add function** and search for the AWS Lambda function you created earlier by name.
@@ -130,7 +132,7 @@ Then click **Create** project.
 
 In your [AWS DeepLens console](https://console.aws.amazon.com/deeplens/home?#)’s **Projects** page, select the project you want to deploy and then select **Deploy to device**.
 
-![sample-project-list](/images/500_deploy_a_custom_model/lab1-sample-projects.png)
+![sample-project-list](/images/500_deploy_a_custom_model/lab1-sample-projects-1.png)
 
 On the Target device screen, choose your device from the list, and click **Review.**
 
