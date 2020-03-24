@@ -33,6 +33,6 @@ The following diagram illustrates the solution architecture.
 To complete this walkthrough, you must have the following prerequisites:
 
 * AWS Account
-* An AWS DeepLens device. Available on [Amazon.com](https://www.amazon.com/dp/B07KYKY2K7) (US), [Amazon.ca](https://www.amazon.ca/dp/B07KYKY2K7) (Canada), [Amazon.co.jp](https://www.amazon.co.jp/dp/B07KYKY2K7) (Japan), [Amazon.de](https://www.amazon.de/dp/B07KYKY2K7) (Germany), [Amazon.fr](https://www.amazon.fr/dp/B07KYKY2K7) (France), [Amazon.es](https://www.amazon.es/dp/B07KYKY2K7) (Spain), [Amazon.it](https://www.amazon.com/dp/B07KYKY2K7) (Italy).
+* An AWS DeepLens device. Available on [Amazon.com](https://www.amazon.com/dp/B07JLSHR23) (US), [Amazon.ca](https://www.amazon.ca/dp/B07JLSHR23) (Canada), [Amazon.co.jp](https://www.amazon.co.jp/dp/B07F17K9J2) (Japan), [Amazon.de](https://www.amazon.de/dp/B07KYKY2K7) (Germany), [Amazon.fr](https://www.amazon.fr/dp/B07KYKY2K7) (France), [Amazon.es](https://www.amazon.es/dp/B07KYKY2K7) (Spain), [Amazon.it](https://www.amazon.it/dp/B07KYKY2K7) (Italy).
 * Raspberry Pi with Sense HAT (optional)
 
